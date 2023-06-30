@@ -1,18 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/background"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="right"
+        android:layout_alignParentRight="true">
+
+        <ImageButton
+            android:id="@+id/change_language"
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/language"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/student_id"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter student ID..."
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter student name..."
+        android:minHeight="48dp"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/student_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter email..."
+        android:minHeight="48dp"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Spinner
+        android:id="@+id/subject_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:minHeight="48dp"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/addstudentbtn"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/gray"
+            android:gravity="center"
+            android:layout_marginRight="60dp"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/deletestudentbtn"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/gray"
+            android:gravity="center"
+            android:text="Delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/modifystudentbtn"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/gray"
+            android:layout_marginRight="60dp"
+            android:text="Modify" />
+
+        <Button
+            android:id="@+id/viewstudentbtn"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/gray"
+            android:text="View" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/viewallstudentsbtn"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/gray"
+            android:text="View all" />
+
+    </LinearLayout>
+
+</LinearLayout>
