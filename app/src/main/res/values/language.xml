@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="studentIdHint">Enter student ID...</string>
+    <string name="studentNameHint">Enter student name...</string>
+    <string name="studentEmailHint">Enter student email...</string>
+
+    <string name="addBtnName">Add</string>
+    <string name="deleteBtnName">Delete</string>
+    <string name="modifyBtnName">Modify</string>
+    <string name="viewBtnName">View</string>
+    <string name="viewAllBtnName">View all</string>
+</resources>

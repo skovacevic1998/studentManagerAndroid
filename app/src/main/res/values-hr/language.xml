@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="studentIdHint">Unesite ID studenta...</string>
+    <string name="studentNameHint">Unesite ime studenta...</string>
+    <string name="studentEmailHint">Unesite email studenta...</string>
+
+    <string name="addBtnName">Dodaj</string>
+    <string name="deleteBtnName">Obriši</string>
+    <string name="modifyBtnName">Izmjeni</string>
+    <string name="viewBtnName">Pregled</string>
+    <string name="viewAllBtnName">Pregledaj sve</string>
+</resources>
