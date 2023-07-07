@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "368002169506",
+    "project_id": "evidstudentandroid",
+    "storage_bucket": "evidstudentandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368002169506:android:f6c12c29338f2b3398f5fb",
+        "android_client_info": {
+          "package_name": "com.example.studentmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368002169506-mo13aq42r5i0fel17j3v16fg782kukpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOAzclObXCjYKWjHMySb9Elt_2hrmVzno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368002169506-mo13aq42r5i0fel17j3v16fg782kukpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

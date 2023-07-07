@@ -3,10 +3,24 @@
     <string name="studentIdHint">Unesite ID studenta...</string>
     <string name="studentNameHint">Unesite ime studenta...</string>
     <string name="studentEmailHint">Unesite email studenta...</string>
+    <string name="studentSubjectHint">Unesite smijer studenta...</string>
 
-    <string name="addBtnName">Dodaj</string>
-    <string name="deleteBtnName">Obriši</string>
-    <string name="modifyBtnName">Izmjeni</string>
-    <string name="viewBtnName">Pregled</string>
-    <string name="viewAllBtnName">Pregledaj sve</string>
+    <string name="addBtnName">Dodaj studenta</string>
+    <string name="deleteBtnName">Obriši studenta</string>
+    <string name="modifyBtnName">Izmjeni studenta</string>
+    <string name="viewBtnName">Pregled studenata</string>
+    <string name="tryAgainBtnName">Pokušaj ponovno</string>
+    <string name="backBtnName">Nazad</string>
+    <string name="registerBtnName">Evidentiraj studenta</string>
+    <string name="getStudentBtnName">Dohvati studenta</string>
+
+    <string name="studentIdLbl">ID studenta:</string>
+    <string name="studentNameLbl">Ime studenta:</string>
+    <string name="studentEmailLbl">Email studenta:</string>
+    <string name="studentSubjectLbl">Smijer studenta:</string>
+    <string name="appNameMenu">Evidencija studenta</string>
+    <string name="appNameAdd">Registracija studenta</string>
+    <string name="appNameDelete">Brisanje studenta</string>
+    <string name="appNameModify">Izmjena informacija</string>
+    <string name="appNameView">Pregled studenata</string>
 </resources>

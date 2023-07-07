@@ -3,10 +3,24 @@
     <string name="studentIdHint">Enter student ID...</string>
     <string name="studentNameHint">Enter student name...</string>
     <string name="studentEmailHint">Enter student email...</string>
+    <string name="studentSubjectHint">Enter student subject...</string>
 
-    <string name="addBtnName">Add</string>
-    <string name="deleteBtnName">Delete</string>
-    <string name="modifyBtnName">Modify</string>
-    <string name="viewBtnName">View</string>
-    <string name="viewAllBtnName">View all</string>
+    <string name="addBtnName">Add student</string>
+    <string name="deleteBtnName">Delete student</string>
+    <string name="modifyBtnName">Modify student</string>
+    <string name="viewBtnName">View students</string>
+    <string name="tryAgainBtnName">Try again</string>
+    <string name="backBtnName">Back</string>
+    <string name="registerBtnName">Register student</string>
+    <string name="getStudentBtnName">Get student</string>
+
+    <string name="studentIdLbl">Student ID:</string>
+    <string name="studentNameLbl">Student name:</string>
+    <string name="studentEmailLbl">Student email:</string>
+    <string name="studentSubjectLbl">Student subject:</string>
+    <string name="appNameMenu">Student record</string>
+    <string name="appNameAdd">Add student</string>
+    <string name="appNameDelete">Delete student</string>
+    <string name="appNameModify">Modify student</string>
+    <string name="appNameView">View students</string>
 </resources>
