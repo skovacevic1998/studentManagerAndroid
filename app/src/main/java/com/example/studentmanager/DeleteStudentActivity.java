@@ -42,32 +42,30 @@ public class DeleteStudentActivity extends AppCompatActivity {
                 long id = Long.valueOf(studentId.getText().toString());
 
                 if(id != 0){
-                    FirebaseFirestore db = FirebaseFirestore.getInstance();
-                    CollectionReference collectionRef = db.collection("studentsData");
-                    collectionRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                        @Override
-                        public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                            if (task.isSuccessful()) {
-                                for (QueryDocumentSnapshot document : task.getResult()) {
-                                    // Check if the desired field exists and its value
-                                    if (document.contains("id") && document.getLong("id").equals(id)) {
-                                        document.getReference().delete();
-                                        Toast.makeText(DeleteStudentActivity.this, "Student deleted!", Toast.LENGTH_SHORT).show();
-                                        ClearFields();
-                                        return;
-                                    }else{
-                                        Toast.makeText(DeleteStudentActivity.this, "No student found, try different ID.", Toast.LENGTH_SHORT).show();
-                                        ClearFields();
-                                        return;
+                    try {
+                        FirebaseFirestore db = FirebaseFirestore.getInstance();
+                        db.collection("studentsData").whereEqualTo("id", id)
+                                .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                        if (task.isSuccessful()) {
+                                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                                document.getReference().delete();
+                                                Toast.makeText(DeleteStudentActivity.this, "Student deleted!", Toast.LENGTH_SHORT).show();
+                                                ClearFields();
+                                            }
+                                            return;
+                                        } else {
+                                            // Handle any errors
+                                            Exception e = task.getException();
+                                            // Log the error or show an error message
+                                        }
                                     }
-                                }
-                            } else {
-                                // Handle any errors
-                                Exception e = task.getException();
-                                // Log the error or show an error message
-                            }
-                        }
-                    });
+                                });
+                    }catch (Exception e){
+                        Toast.makeText(DeleteStudentActivity.this, "No student with this ID found! Try again.", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
                 }else{
                     Toast.makeText(DeleteStudentActivity.this, "Enter students ID.", Toast.LENGTH_SHORT).show();
                     return;
